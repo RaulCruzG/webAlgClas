@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Enteros</title>
+        <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    </head>
+
+    <body>
+        <div>
+            <h1><a href="/">Variables Enteros</a></h1>
+        </div>
+
+        <div class="content container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Variable 1</th>
+                                <th scope="col">Variable 2</th>
+                                <th scope="col">Variable 3</th>
+                                <th scope="col">Sumatoria</th>
+                            </tr>
+                        </thead>
+                        {% for entero in enteros %}
+                            <tbody>
+                                <tr>
+                                    <td>{{entero.variableE1}}</td>
+                                    <td>{{entero.variableE2}}</td>
+                                    <td>{{entero.variableE3}}</td>
+                                    <td>{{entero.suma}}</td>
+                                </tr>
+                            </tbody>
+                        {% endfor %}         
+                    </table>        
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
