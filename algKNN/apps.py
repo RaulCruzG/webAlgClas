@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class Prueba1Config(AppConfig):
+class AlgknnConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'prueba1'
+    name = 'algKNN'
