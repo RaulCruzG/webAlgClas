@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'blog.apps.BlogConfig',
     'datosBase',
     'algKNN',
+    'bayesIngenuo',
+    'regresion',
 ]
 
 MIDDLEWARE = [

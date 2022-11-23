@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>KNN</title>
+        <title>Regresion</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
     </head>
     <body>
@@ -25,9 +25,9 @@
                           Algoritmos
                         </a>
                         <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">KNN</a></li>
+                          <li><a class="dropdown-item" href="{% url 'algKNN' %}">KNN</a></li>
                           <li><a class="dropdown-item" href="{% url 'bayes' %}">BAYES</a></li>
-                          <li><a class="dropdown-item" href="{% url 'regresionL' %}">REGRESIÓN</a></li>
+                          <li><a class="dropdown-item" href="#">REGRESIÓN</a></li>
                         </ul>
                       </li>
                     </ul>
@@ -37,56 +37,45 @@
         </header>
 
         <div class="page-header text-center">
-          <h1>ALGORITMO KNN</h1>
+          <h1>ALGORITMO REGRESIÓN</h1>
         </div>
 
         <div class="content container col-lg-10 mx-auto text-align-center">
-          <p>Antes de concentrarnos en el algoritmo KNN, es necesario retomar las bases. ¿Qué es un algoritmo de aprendizaje supervisado?. 
-              En aprendizaje supervisado, un algoritmo recibe un conjunto de datos que están etiquetados con los valores de salida correspondientes
-              sobre los que puede entrenarse y definir un modelo de predicción. Este algoritmo podrá luego ser utilizado sobre datos nuevos para 
-              predecir sus valores de salida correspondientes.</p>
-          <p>La lógica detrás del algoritmo de las K vecinas más cercanas es una de las más sencillas de todos los algoritmos de Machine Learning supervisados:
-            <br>Etapa 1: Seleccionar el número de K vecinas
-            <br>Etapa 2: Calcular la distancia</p>
+          <p>La regresión logística es un tipo de análisis de regresión utilizado para predecir el resultado de una variable categórica 
+            (una variable que puede adoptar un número limitado de categorías) en función de las variables independientes o predictoras.
+            Es útil para modelar la probabilidad de un evento ocurriendo en función de otros factores. El análisis de regresión logística
+            se enmarca en el conjunto de Modelos Lineales Generalizados (GLM por sus siglas en inglés) que usa como función de enlace la
+            función logit. Las probabilidades que describen el posible resultado de un único ensayo se modelan como una función de 
+            variables explicativas, utilizando una función logística.</p>
+          <p>La regresión logística es usada extensamente en las ciencias médicas y sociales. Otros nombres para regresión logística usados
+            en varias áreas de aplicación incluyen modelo logístico, modelo logit, y clasificador de máxima entropía.
         </div>
 
         <div class="content container">
           <div class="col-lg-10 mx-auto">
-            <form action="/buscar/" method="GET" class="row g-3 needs-validation" novalidate>
-              <div class="col-md-3 position-relative">
-                <label for="validationTooltip01" class="form-label">K</label>
-                <input type="text" name ='k' class="form-control" id="validationTooltip01" required>
-                <div class="valid-tooltip">
-                  Looks good!
-                </div>
-              </div>
-              <div class="col-md-3 position-relative">
+            <form action="/equivalente/" method="GET" class="row g-3 needs-validation" novalidate>
+              <div class="col-md-6 position-relative">
                 <label for="validationTooltip02" class="form-label">Variable 1</label>
                 <input type="text" name ='x1' class="form-control" id="validationTooltip02" required>
                 <div class="valid-tooltip">
                   Looks good!
                 </div>
               </div>
-              <div class="col-md-3 position-relative">
+              <div class="col-md-6 position-relative">
                 <label for="validationTooltip02" class="form-label">Variable 2</label>
                 <input type="text" name ='x2' class="form-control" id="validationTooltip02" required>
                 <div class="valid-tooltip">
                   Looks good!
                 </div>
               </div>
-              <div class="col-md-3 position-relative">
-                <label for="validationTooltip02" class="form-label">Variable 3</label>
-                <input type="text" name ='x3' class="form-control" id="validationTooltip02" required>
-                <div class="valid-tooltip">
-                  Looks good!
-                </div>
-              </div>
+
               <div class="col-12">
-                <button class="btn btn-primary" type="submit" value="Buscar">Clasificar</button>
+                <button class="btn btn-primary" type="submit" value="interpretar">Clasificar</button>
               </div>
             </form>
           </div>
         </div>
+
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>

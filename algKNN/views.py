@@ -19,9 +19,10 @@ def buscar(request):
         contexto = zip(listDist, equivalente)
         contexto = sorted(contexto)
         contado = contar(contexto, k)
+        tabla = zip(contexto, contado)
         referencia = refe(contexto, contado, k)
         mensaje = referencia
-        return render(request, 'algKNN/resultado.html', {'resultado': referencia})
+        return render(request, 'algKNN/resultado.html', {'resultado': referencia, 'tabla': tabla})
     else:
         mensaje = "Te falto llenar o llenaste incorrectamente, recuerda que deben ser valores numericos"
     return HttpResponse(mensaje)

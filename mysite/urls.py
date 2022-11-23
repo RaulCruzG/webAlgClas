@@ -13,14 +13,19 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from algKNN import views
 from django.contrib import admin
 from django.urls import path, include
-
+from algKNN import views as vk
+from bayesIngenuo import views as vb
+from regresion import views as vr
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('blog.urls')),
     path('datosBase', include('datosBase.urls')),
     path('algKNN', include('algKNN.urls')),
-    path('buscar/', views.buscar),
+    path('bayesIngenuo', include('bayesIngenuo.urls')),
+    path('regresion', include('regresion.urls')),
+    path('buscar/', vk.buscar),
+    path('clasificar/', vb.clasificar),
+    path('equivalente/', vr.interpretar),
 ]
