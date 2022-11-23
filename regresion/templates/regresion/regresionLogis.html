@@ -9,16 +9,16 @@
     <body>
 
         <header>
-            <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
+            <nav class="navbar navbar-expand-lg" style="background-color: #FF3FDC;">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="{% url 'index' %}">Inicio</a>
+                  <a class="navbar-brand" href="{% url 'index' %}">Samantha</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                       <li class="nav-item">
-                        <a class="nav-link"  href="{% url 'tablaDatos' %}">Base datos</a>
+                        <a class="nav-link"  href="{% url 'tablaDatos' %}">Datos</a>
                       </li>
                       <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -40,29 +40,18 @@
           <h1>ALGORITMO REGRESIÓN</h1>
         </div>
 
-        <div class="content container col-lg-10 mx-auto text-align-center">
-          <p>La regresión logística es un tipo de análisis de regresión utilizado para predecir el resultado de una variable categórica 
-            (una variable que puede adoptar un número limitado de categorías) en función de las variables independientes o predictoras.
-            Es útil para modelar la probabilidad de un evento ocurriendo en función de otros factores. El análisis de regresión logística
-            se enmarca en el conjunto de Modelos Lineales Generalizados (GLM por sus siglas en inglés) que usa como función de enlace la
-            función logit. Las probabilidades que describen el posible resultado de un único ensayo se modelan como una función de 
-            variables explicativas, utilizando una función logística.</p>
-          <p>La regresión logística es usada extensamente en las ciencias médicas y sociales. Otros nombres para regresión logística usados
-            en varias áreas de aplicación incluyen modelo logístico, modelo logit, y clasificador de máxima entropía.
-        </div>
-
         <div class="content container">
           <div class="col-lg-10 mx-auto">
             <form action="/equivalente/" method="GET" class="row g-3 needs-validation" novalidate>
               <div class="col-md-6 position-relative">
-                <label for="validationTooltip02" class="form-label">Variable 1</label>
+                <label for="validationTooltip02" class="form-label">x1</label>
                 <input type="text" name ='x1' class="form-control" id="validationTooltip02" required>
                 <div class="valid-tooltip">
                   Looks good!
                 </div>
               </div>
               <div class="col-md-6 position-relative">
-                <label for="validationTooltip02" class="form-label">Variable 2</label>
+                <label for="validationTooltip02" class="form-label">x2</label>
                 <input type="text" name ='x2' class="form-control" id="validationTooltip02" required>
                 <div class="valid-tooltip">
                   Looks good!

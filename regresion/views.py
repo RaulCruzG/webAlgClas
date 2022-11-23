@@ -2,9 +2,6 @@ from django.http import HttpResponse
 from django.shortcuts import render
 import numpy as np
 from datosBase.models import Dato
-
-x1 = 4516
-x2 = 334
 # Create your views here.
 def regresionLog(request):
     return render(request, 'regresion/regresionLogis.html')

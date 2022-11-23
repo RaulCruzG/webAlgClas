@@ -9,16 +9,16 @@
     <body>
 
         <header>
-            <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
+            <nav class="navbar navbar-expand-lg" style="background-color: #FF3FDC;">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="{% url 'index' %}">Inicio</a>
+                  <a class="navbar-brand" href="{% url 'index' %}">Samantha</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                       <li class="nav-item">
-                        <a class="nav-link"  href="{% url 'tablaDatos' %}">Base datos</a>
+                        <a class="nav-link"  href="{% url 'tablaDatos' %}">Datos</a>
                       </li>
                       <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -40,16 +40,6 @@
           <h1>ALGORITMO KNN</h1>
         </div>
 
-        <div class="content container col-lg-10 mx-auto text-align-center">
-          <p>Antes de concentrarnos en el algoritmo KNN, es necesario retomar las bases. ¿Qué es un algoritmo de aprendizaje supervisado?. 
-              En aprendizaje supervisado, un algoritmo recibe un conjunto de datos que están etiquetados con los valores de salida correspondientes
-              sobre los que puede entrenarse y definir un modelo de predicción. Este algoritmo podrá luego ser utilizado sobre datos nuevos para 
-              predecir sus valores de salida correspondientes.</p>
-          <p>La lógica detrás del algoritmo de las K vecinas más cercanas es una de las más sencillas de todos los algoritmos de Machine Learning supervisados:
-            <br>Etapa 1: Seleccionar el número de K vecinas
-            <br>Etapa 2: Calcular la distancia</p>
-        </div>
-
         <div class="content container">
           <div class="col-lg-10 mx-auto">
             <form action="/buscar/" method="GET" class="row g-3 needs-validation" novalidate>
@@ -61,21 +51,21 @@
                 </div>
               </div>
               <div class="col-md-3 position-relative">
-                <label for="validationTooltip02" class="form-label">Variable 1</label>
+                <label for="validationTooltip02" class="form-label">x1</label>
                 <input type="text" name ='x1' class="form-control" id="validationTooltip02" required>
                 <div class="valid-tooltip">
                   Looks good!
                 </div>
               </div>
               <div class="col-md-3 position-relative">
-                <label for="validationTooltip02" class="form-label">Variable 2</label>
+                <label for="validationTooltip02" class="form-label">x2</label>
                 <input type="text" name ='x2' class="form-control" id="validationTooltip02" required>
                 <div class="valid-tooltip">
                   Looks good!
                 </div>
               </div>
               <div class="col-md-3 position-relative">
-                <label for="validationTooltip02" class="form-label">Variable 3</label>
+                <label for="validationTooltip02" class="form-label">x3</label>
                 <input type="text" name ='x3' class="form-control" id="validationTooltip02" required>
                 <div class="valid-tooltip">
                   Looks good!
