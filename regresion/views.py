@@ -19,8 +19,6 @@ def interpretar(request):
     return HttpResponse(mensaje)
 
 def valorReferente(datos, x1, x2, b):
-    a1 = 0
-    a2 = 0
     caracter = ''
     for i in datos:
         a1 = i.var1
